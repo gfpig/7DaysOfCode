@@ -1,7 +1,7 @@
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: 100px;
 }
 
 .hero .news__letter {
@@ -13,6 +13,7 @@
 
 .hero .news__letter .titulo {
     color: #202020;
+    opacity: 50%;
     font-family: 'Montserrat';
     font-weight: 400px;
     font-size: 22px;
@@ -28,6 +29,8 @@
 }
 
 .hero .news__letter .texto {
+    opacity: 50%;
+    margin-top: 20px;
     color: #202020;
     font-family: Montserrat;
     font-size: 16px;
@@ -36,7 +39,45 @@
     text-align: left;
 }
 
-.hero .hero__imagem img {
-    margin-top: -208px;
+.hero .news__letter .submit {
+    margin-top: 30px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.news__letter input {
+    border: none;
+    background: url("../../../public/images/envelope-regular.svg") no-repeat scroll 10px 10px;
+    background-size: 21px;
+    background-position-y: center;
+    padding-left: 40px;
+    width: 585px;
+    height: 75px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+}
+
+.news__letter button {
+    width: 194px;
+    height: 75px;
+    background: #FFCB47;
+    border: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero .hero__imagem .imagem {
+    margin-top: -408px;
     width: 787px;
+}
+
+.hero .hero__imagem .imagem img {
+    width: 100%;
 }

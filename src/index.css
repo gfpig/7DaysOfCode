@@ -7,6 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-image: url("../public/images/background_linhas.png"), url("../public/images/background.png");
+}
+
+body {
+  
+  background-image: url("../public/images/body-shape.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

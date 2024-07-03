@@ -1,8 +1,7 @@
-
 .container__menu {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    padding: 10px;
 }
 
 .container__menu .logo {
@@ -14,7 +13,6 @@
     flex-wrap: wrap;
     align-items: center;
     align-self: end;
-    width: 448px;
     justify-content: space-evenly;
 }
 
