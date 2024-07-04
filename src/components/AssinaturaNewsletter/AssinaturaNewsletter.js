@@ -1,25 +1,29 @@
 import React from 'react'
-import './styles.css'
+import ComoConseguir from '../ComoConseguir/ComoConseguir'
+import NossasOfertas from '../NossasOfertas/NossasOfertas'
+import {AssinaturaNewsLetter, Titulo, Subtitulo, Texto, Formulario, Botao, NewsLetter, Moldura} from './styled.tsx'
 
 
 function AssinaturaNewsletter() {
   return (
-    <div className='hero'>
-        <div className='news__letter'>
-            <span className='titulo'>Sua casa com as</span>
-            <span className='bold'>melhores<br />plantas</span>
-            <span className='texto'>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</span>
-            <form className='submit' style={{display:"flex"}}>
+    <>
+    <AssinaturaNewsLetter>
+        <NewsLetter>
+            <Titulo>Sua casa com as</Titulo>
+            <Subtitulo>melhores<br />plantas</Subtitulo>
+            <Texto>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</Texto>
+            <Formulario>
                     <input type="email" placeholder='Insira seu e-mail' />
-                    <button type="submit">Assinar newsletter</button>
-            </form>
-        </div>
-        <div className='hero__imagem'>
-            <div className='imagem'>
-                <img alt="planta" src="images/hero.png" />
-            </div>
-        </div>
-    </div>
+                    <Botao>Assinar newsletter</Botao>
+            </Formulario>
+        </NewsLetter>
+        <Moldura>
+            <img alt="planta" src="images/hero.png" />
+        </Moldura>
+    </AssinaturaNewsLetter>
+    <ComoConseguir />
+    <NossasOfertas />
+    </>
   )
 }
 

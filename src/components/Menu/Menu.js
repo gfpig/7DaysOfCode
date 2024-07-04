@@ -1,24 +1,23 @@
 import React from 'react'
+import { MenuWrapper, Logotipo, Opcoes, Botao} from "./styled.tsx"
 import './Menu.css'
 
 function Menu() {
   return (
-    <div className='container__menu'>
-        <div className='logo'>
-            <img alt="logo" src="/images/logo.svg" />
-        </div>
-        <div className='opcoes__menu'>
-            <button>Como fazer</button>
+    <MenuWrapper>
+        <Logotipo alt="logo" src="/images/logo.svg" />
+        <Opcoes>
+            <Botao>Como fazer</Botao>
             /
-            <button>Ofertas</button>
+            <Botao>Ofertas</Botao>
             /
-            <button>Depoimentos</button>
+            <Botao>Depoimentos</Botao>
             /
-            <button>Vídeos</button>
+            <Botao>Vídeos</Botao>
             /
-            <button>Meu carrinho</button>
-        </div>
-    </div>
+            <Botao>Meu carrinho</Botao>
+        </Opcoes>
+    </MenuWrapper>
   )
 }
 
