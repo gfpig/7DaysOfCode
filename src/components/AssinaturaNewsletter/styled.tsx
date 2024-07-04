@@ -8,23 +8,12 @@ export const AssinaturaNewsLetter = styled.div`
 `
 
 export const NewsLetter = styled.div`
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 585px;
-
-    .news__letter button {
-        width: 194px;
-        height: 75px;
-        background: #FFCB47;
-        border: none;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19.5px;
-        text-align: center;
-        color: #FFFFFF;
-    }
 }
 `
 
@@ -79,9 +68,9 @@ export const Formulario = styled.form`
         line-height: 19.5px;
         text-align: left;
     }
-`
 
-export const Botao = styled.button `
+    button {
+        cursor: pointer;
         width: 194px;
         height: 75px;
         background: #FFCB47;
@@ -92,9 +81,12 @@ export const Botao = styled.button `
         line-height: 19.5px;
         text-align: center;
         color: #FFFFFF;
-`;
+    }
+`
 
 export const Moldura = styled.div`
+    position: relative;
+    z-index: 0;
     margin-top: -508px;
     width: 787px;
 
