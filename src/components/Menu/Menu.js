@@ -1,11 +1,11 @@
 import React from 'react'
 import { MenuWrapper, Logotipo, Opcoes, Botao} from "./styled.tsx"
-import './Menu.css'
+import logo from "../../assets/logo.svg"
 
 function Menu() {
   return (
     <MenuWrapper>
-        <Logotipo alt="logo" src="/images/logo.svg" />
+        <Logotipo alt="logo" src={logo} />
         <Opcoes>
             <Botao>Como fazer</Botao>
             /

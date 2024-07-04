@@ -4,6 +4,8 @@ import Menu from '../../components/Menu/Menu'
 import AssinaturaNewsletter from '../../components/AssinaturaNewsletter/AssinaturaNewsletter'
 
 function HomePage() {
+  document.title = "Casa Verde"
+
   return (
     <main>
         <Menu />
