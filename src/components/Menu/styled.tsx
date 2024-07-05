@@ -19,11 +19,18 @@ export const Opcoes = styled.div`
 `
 
 export const Botao = styled.button`
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 16px;
     line-height: 19.5px;
     background: none;
     border: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `
 

@@ -43,13 +43,11 @@ export const Item = styled.div`
     width: 379px;
     height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
 `
 
 export const FotoPlanta = styled.img`
-    width: 225px;
-    height: 337px;
+    max-width: 225px;
+    max-height: 337px;
 `
 
 export const NomePlanta = styled.h1`
@@ -70,6 +68,7 @@ export const Preco = styled.span`
 `
 
 export const Botao = styled.button`
+    cursor: pointer;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
@@ -83,6 +82,10 @@ export const Botao = styled.button`
     border: none;
     width: 111px;
     color: #FFCB47;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
     img {
         width: 14px;

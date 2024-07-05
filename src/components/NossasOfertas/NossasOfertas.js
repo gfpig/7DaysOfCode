@@ -45,7 +45,7 @@ function NossasOfertas() {
             </Item>
             <Item>
                 <div className='produtos__item__imagem'>
-                    <FotoPlanta alt="Cyperus rotundus" src="images/produto-04.png" />
+                    <FotoPlanta alt="Cyperus rotundus" src="images/produto-04.png" style={{transform:"rotate(45deg)"}} />
                 </div>
                 <div>
                     <NomePlanta>Cyperus rotundus</NomePlanta>
@@ -71,7 +71,7 @@ function NossasOfertas() {
             </Item>
             <Item>
                 <div className='produtos__item__imagem'>
-                    <FotoPlanta alt="Datura metel" src="images/produto-06.png" />
+                    <FotoPlanta alt="Datura metel" src="images/produto-06.png" style={{transform:"rotate(45deg)"}} />
                 </div>
                 <div>
                     <NomePlanta>Datura metel</NomePlanta>

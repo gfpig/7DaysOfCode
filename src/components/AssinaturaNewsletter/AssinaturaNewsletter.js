@@ -1,16 +1,35 @@
 import React, {useState} from 'react'
+import emailjs from "@emailjs/browser"
 import ComoConseguir from '../ComoConseguir/ComoConseguir'
 import NossasOfertas from '../NossasOfertas/NossasOfertas'
-import {AssinaturaNewsLetter, Titulo, Subtitulo, Texto, Formulario, Botao, NewsLetter, Moldura} from './styled.tsx'
-
+import {AssinaturaNewsLetter, Titulo, Subtitulo, Texto, Formulario, NewsLetter, Moldura} from './styled.tsx'
 
 function AssinaturaNewsletter() {
   const [email, setEmail] = useState('');
 
+  const enviaEmail = e => {
+    e.preventDefault();
+    const service_id = "service_s03ysud";
+    const template_id = "template_3nj5zfe"
+
+    const templateParams = {
+      to_name: email
+    }
+
+    emailjs.send(service_id, template_id, templateParams, "T6IjFO-6IGLpLT4ox")
+    .then(() => {
+      console.log("E-mail enviado com sucesso")
+    }, (err) => {
+      alert("Um erro ocorreu", err);
+    })
+  }
+
   const HandleSubmit = e => {
     e.preventDefault();
 
+    enviaEmail(e);
     alert("Obrigado pela sua assinatura, você receberá nossas novidades no e-mail " + email)
+    setEmail("");
   }
 
   return (
