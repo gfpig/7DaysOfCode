@@ -26,6 +26,43 @@ export const Subtitulo = styled.h1`
     text-align: center;
 `
 
+export const ListaFiltros = styled.div`
+    display:flex;
+    align-self: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    img {
+        cursor: pointer;
+        height: 25px;
+    }
+`
+
+export const FiltroPreco = styled.div`
+    display: flex;
+    gap: 10px;
+
+    input {
+        border-style: none none solid none;
+        border-color: #FFCB47;
+        border-width: 1px;
+    }
+
+    button {
+        cursor: pointer;
+        width: 94px;
+        height: 25px;
+        background: #FFCB47;
+        border: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+`
+
 export const ListaProdutos = styled.div`
     display: grid;
     align-items: center;
